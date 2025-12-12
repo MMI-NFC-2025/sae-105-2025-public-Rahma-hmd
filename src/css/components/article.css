@@ -19,6 +19,18 @@
     object-fit: cover;
 }
 
+.card__label {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    padding: 6px 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
 .card__body {
     padding: 12px 12px 14px;
     display: grid;
@@ -28,10 +40,17 @@
 .card__title {
     font-size: 18px;
     color: #fff;
+    font-weight: 700;
 }
 
 .card__meta {
     font-size: 13px;
     color: rgba(255, 255, 255, 0.7);
+    font-weight: 500;
+}
+
+.card--link {
+    text-decoration: none;
+    color: inherit;
 }
 

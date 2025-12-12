@@ -1,6 +1,9 @@
 /* Utils */
 @import url("utils/variables.css");
 
+/* Vendors */
+@import url("vendors/normalize.css");
+
 /* Base */
 @import url("base/reset.css");
 @import url("base/typography.css");

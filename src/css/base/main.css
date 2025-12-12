@@ -1,6 +1,6 @@
 body {
     min-height: 100vh;
-    background: radial-gradient(circle at 20% 20%, rgba(237, 110, 5, 0.06), transparent 26%), var(--bg);
+    background: #210c0c;
 }
 
 .page {

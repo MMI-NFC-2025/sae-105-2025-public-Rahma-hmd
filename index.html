@@ -53,207 +53,128 @@
 
     <main class="page">
         <section class="hero">
-            <div class="hero__visual">
-                <img src="assets/img/herofestival.avif" alt="Public en concert au festival Échos Sonores">
+            <div class="hero__visual hero__visual--framed">
+                <img src="assets/img/cardheroacceuil.avif" alt="Affiche Échos Sonores 2025">
             </div>
             <div class="hero__content">
-                <span class="eyebrow">Festival 28-31 août</span>
-                <h1 class="hero__title">Échos Sonores 2025</h1>
-                <p class="hero__desc">4 jours de musique électronique, d’installations immersives et de rencontres
-                    artistiques au cœur de Besançon.</p>
+                <h1 class="hero__title">Echos Sonore<br>vous attend</h1>
+                <p class="hero__desc">Trois jours de musique sous les feux de l’automne. Les 15, 16 et 17 novembre
+                    2026, venez vivre l’expérience.</p>
                 <div class="hero__actions">
-                    <a class="btn btn--primary" href="#programme">Billetterie</a>
-                    <a class="btn btn--ghost" href="#infos">Infos pratiques</a>
+                    <a class="btn btn--primary" href="infos.html">Billets</a>
+                    <a class="btn btn--ghost" href="infos.html">Infos</a>
                 </div>
             </div>
         </section>
 
-        <section id="programme" class="section">
-            <div class="section__head">
-                <div>
-                    <span class="eyebrow">Line-up</span>
-                    <h2 class="section__title">Programme</h2>
-                </div>
-                <a class="link" href="programme.html">Voir tout</a>
-            </div>
-            <div class="carousel" data-carousel>
+        <section class="section section--tight">
+            <h2 class="section__title section__title--center">Découvrir</h2>
+            <div class="carousel carousel--nav" data-carousel>
                 <div class="carousel__track" data-carousel-track>
-                    <article class="card carousel__item">
-                    <div class="card__media">
-                        <img src="assets/img/cardprogramme28.09.avif" alt="Programme du 28 août">
-                    </div>
-                    <div class="card__body">
-                        <h3 class="card__title">Jeudi 28</h3>
-                        <p class="card__meta">Ouverture, lives électro et DJ sets en extérieur.</p>
-                    </div>
-                    </article>
-                    <article class="card carousel__item">
-                    <div class="card__media">
-                        <img src="assets/img/cardprogramme29.avif" alt="Programme du 29 août">
-                    </div>
-                    <div class="card__body">
-                        <h3 class="card__title">Vendredi 29</h3>
-                        <p class="card__meta">Scène immersive, nouveaux talents et têtes d’affiche.</p>
-                    </div>
-                    </article>
-                    <article class="card carousel__item">
-                    <div class="card__media">
-                        <img src="assets/img/cardprogramme31.avif" alt="Programme du 31 août">
-                    </div>
-                    <div class="card__body">
-                        <h3 class="card__title">Samedi 30</h3>
-                        <p class="card__meta">Closing géant, sunrise set et scénographie lumière.</p>
-                    </div>
-                    </article>
+                    <a class="card card--link carousel__item" href="festival.html">
+                        <div class="card__media">
+                            <img src="assets/img/cardfestivalcarousel.avif" alt="Le festival">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Le festival</h3>
+                        </div>
+                    </a>
+                    <a class="card card--link carousel__item" href="programme.html">
+                        <div class="card__media">
+                            <img src="assets/img/cardprogrammecarousel.avif" alt="Programme">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Le programme</h3>
+                        </div>
+                    </a>
+                    <a class="card card--link carousel__item" href="artistes.html">
+                        <div class="card__media">
+                            <img src="assets/img/cardpageartistecarousel.avif" alt="Artistes">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Les artistes</h3>
+                        </div>
+                    </a>
+                    <a class="card card--link carousel__item" href="scene.html">
+                        <div class="card__media">
+                            <img src="assets/img/cardscenecarousel.avif" alt="Scènes">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Les scènes</h3>
+                        </div>
+                    </a>
+                    <a class="card card--link carousel__item" href="infos.html">
+                        <div class="card__media">
+                            <img src="assets/img/cardinfospratiquecarousel.avif" alt="Infos pratiques">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Infos pratiques</h3>
+                        </div>
+                    </a>
+                    <a class="card card--link carousel__item" href="contact.html">
+                        <div class="card__media">
+                            <img src="assets/img/cardcontactcarousel.avif" alt="Contact">
+                        </div>
+                        <div class="card__body">
+                            <h3 class="card__title">Contact</h3>
+                        </div>
+                    </a>
                 </div>
                 <div class="carousel__controls">
-                    <button class="carousel__btn" data-carousel-prev aria-label="Programme précédent">‹</button>
-                    <button class="carousel__btn" data-carousel-next aria-label="Programme suivant">›</button>
+                    <button class="carousel__btn" data-carousel-prev aria-label="Précédent">‹</button>
+                    <button class="carousel__btn" data-carousel-next aria-label="Suivant">›</button>
                 </div>
             </div>
         </section>
 
-        <section class="section" id="artistes">
-            <div class="section__head">
-                <div>
-                    <span class="eyebrow">Casting</span>
-                    <h2 class="section__title">Artistes</h2>
+        <section class="section section--tight" id="partenaires">
+            <h2 class="section__title section__title--center">Nos partenaires</h2>
+            <div class="partners">
+                <div class="partners__col">
+                    <img src="assets/img/partenaire1.avif" alt="Partenaire 1">
+                    <img src="assets/img/partenaire2.avif" alt="Partenaire 2">
                 </div>
-                <a class="link" href="artistes.html">Line-up complet</a>
-            </div>
-            <div class="cards cards--scroll">
-                <article class="card">
-                    <div class="card__media">
-                        <img src="assets/img/cardartiste1.avif" alt="Artiste 1">
-                    </div>
-                    <div class="card__body">
-                        <h3 class="card__title">Nova Pulse</h3>
-                        <p class="card__meta">Techno mélodique • FR</p>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="card__media">
-                        <img src="assets/img/cardartiste2.avif" alt="Artiste 2">
-                    </div>
-                    <div class="card__body">
-                        <h3 class="card__title">Lumi</h3>
-                        <p class="card__meta">House solaire • CA</p>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="card__media">
-                        <img src="assets/img/cardartiste3.avif" alt="Artiste 3">
-                    </div>
-                    <div class="card__body">
-                        <h3 class="card__title">Echoes</h3>
-                        <p class="card__meta">Live analog • UK</p>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section id="infos" class="section">
-            <div class="section__head">
-                <div>
-                    <span class="eyebrow">Pratique</span>
-                    <h2 class="section__title">Infos clés</h2>
-                </div>
-                <a class="link" href="infos.html">Tout savoir</a>
-            </div>
-            <div class="cards">
-                <article class="card">
-                    <div class="card__media">
-                        <img src="assets/img/camping.avif" alt="Camping du festival">
-                    </div>
-                    <div class="card__body">
-                        <h3 class="card__title">Camping sur place</h3>
-                        <p class="card__meta">Espaces ombragés, douches, navettes vers le centre-ville.</p>
-                    </div>
-                </article>
-                <article class="card">
-                    <div class="card__media">
-                        <img src="assets/img/cardinfospratiquehero.avif" alt="Parcours du site">
-                    </div>
-                    <div class="card__body">
-                        <h3 class="card__title">Accès & mobilité</h3>
-                        <p class="card__meta">Tram direct, parking vélo, signalétique PMR sur toutes les scènes.</p>
-                    </div>
-                </article>
-            </div>
-            <div class="accordion" data-accordion>
-                <div class="accordion__item">
-                    <button class="accordion__button" type="button" aria-expanded="false">
-                        Horaires & accès
-                        <span class="accordion__icon">+</span>
-                    </button>
-                    <div class="accordion__panel">
-                        Tram direct depuis la gare, ouverture des portes à 16h, dernière entrée 1h avant la fin.
-                    </div>
-                </div>
-                <div class="accordion__item">
-                    <button class="accordion__button" type="button" aria-expanded="false">
-                        Restauration & cashless
-                        <span class="accordion__icon">+</span>
-                    </button>
-                    <div class="accordion__panel">
-                        Food-courts variés, options végétariennes, paiement cashless sur toutes les scènes.
-                    </div>
-                </div>
-                <div class="accordion__item">
-                    <button class="accordion__button" type="button" aria-expanded="false">
-                        Accessibilité
-                        <span class="accordion__icon">+</span>
-                    </button>
-                    <div class="accordion__panel">
-                        Parcours PMR, plateformes dédiées, signalétique renforcée, équipe d’accompagnement sur place.
-                    </div>
+                <div class="partners__col">
+                    <img src="assets/img/partenaire3.avif" alt="Partenaire 3">
+                    <img src="assets/img/partenaire4.avif" alt="Partenaire 4">
                 </div>
             </div>
         </section>
 
-        <section class="section" id="contact">
-            <div class="section__head">
-                <div>
-                    <span class="eyebrow">Contact</span>
-                    <h2 class="section__title">Une question ?</h2>
-                </div>
-                <a class="link" href="contact.html">Écrire</a>
-            </div>
-            <article class="card">
-                <div class="card__media">
-                    <img src="assets/img/contactherocard.avif" alt="Contact festival">
-                </div>
-                <div class="card__body">
-                    <h3 class="card__title">Équipe festivalière</h3>
-                    <p class="card__meta">Support 7j/7 par mail et sur place pendant l’événement.</p>
-                </div>
-            </article>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer__grid">
-            <div class="footer__brand">
-                <img class="topbar__logo" src="assets/icones/LOGO PETIT.svg" alt="Logo Échos Sonores">
-                Échos Sonores
-            </div>
-            <div class="footer__links">
-                <span>28 — 31 août 2025 • Besançon</span>
-                <span>Billetterie : pass jour & 3 jours</span>
-                <span>Contact : hello@echos-sonores.fr</span>
-            </div>
-            <div class="footer__socials">
-                <a href="#" aria-label="Instagram">
-                    <img src="assets/icones/instagrampetit.avif" alt="Instagram">
-                </a>
-                <a href="#" aria-label="Facebook">
+        <section class="section section--tight">
+            <h2 class="section__title section__title--center">Nous suivre</h2>
+            <div class="socials">
+                <a class="socials__item" href="https://www.facebook.com/mmimontbeliard/?locale=fr_FR" aria-label="Facebook">
                     <img src="assets/icones/facebookpetit.avif" alt="Facebook">
                 </a>
-                <a href="#" aria-label="TikTok">
+                <a class="socials__item" href="https://www.instagram.com/ville_audincourt/" aria-label="Instagram">
+                    <img src="assets/icones/instagrampetit.avif" alt="Instagram">
+                </a>
+                <a class="socials__item" href="https://www.tiktok.com/@mmi_montbeliard" aria-label="TikTok">
                     <img src="assets/icones/tiktokpetit.avif" alt="TikTok">
                 </a>
             </div>
+        </section>
+    </main>
+
+    <footer class="footer footer--stacked">
+        <div class="footer__block">
+            <h3 class="footer__title">Adresse</h3>
+            <p class="footer__text">Echos Sonore Festival<br>9 Allée de la Filature<br>25400 Audincourt</p>
         </div>
+        <div class="footer__block">
+            <h3 class="footer__title">Contact</h3>
+            <p class="footer__text">07 54 32 16 79<br>echossonore@gmail.com</p>
+        </div>
+        <div class="footer__block footer__block--nav">
+            <a href="index.html">Accueil</a>
+            <a href="programme.html">Programme</a>
+            <a href="artistes.html">Artistes</a>
+            <a href="scene.html">Scènes</a>
+            <a href="infos.html">Infos pratiques</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <p class="footer__copyright">© 2026 — Echos Sonore Festival. Tous droits réservés.</p>
     </footer>
 
     <script src="src/js/script.js" defer></script>

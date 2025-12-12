@@ -2,23 +2,23 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 12px 16px;
-    border-radius: 14px;
+    padding: 12px 18px;
+    border-radius: 10px;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 14px;
     border: 1px solid transparent;
     transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, color 0.2s ease;
 }
 
 .btn--primary {
-    background: var(--accent);
-    color: #1f0d0e;
-    box-shadow: 0 10px 20px rgba(237, 110, 5, 0.28);
+    background: #f46c09;
+    color: #fff;
+    box-shadow: 0 8px 14px rgba(244, 108, 9, 0.35);
 }
 
 .btn--ghost {
-    background: rgba(255, 255, 255, 0.06);
-    border-color: rgba(255, 255, 255, 0.16);
+    background: transparent;
+    border-color: rgba(255, 255, 255, 0.28);
     color: #fff;
 }
 

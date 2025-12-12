@@ -50,9 +50,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Carrousel horizontal
-    const carousel = document.querySelector("[data-carousel]");
-    if (carousel) {
+    // Carrousels horizontaux (multi)
+    const carousels = document.querySelectorAll("[data-carousel]");
+    carousels.forEach((carousel) => {
         const track = carousel.querySelector("[data-carousel-track]");
         const prev = carousel.querySelector("[data-carousel-prev]");
         const next = carousel.querySelector("[data-carousel-next]");
@@ -82,10 +82,11 @@ document.addEventListener("DOMContentLoaded", () => {
         track?.addEventListener("scroll", () => {
             const scrollLeft = track.scrollLeft;
             const itemWidth = items[0]?.getBoundingClientRect().width || 1;
-            const idx = Math.round(scrollLeft / (itemWidth + 12)); // 12px gap
+            const gap = 12;
+            const idx = Math.round(scrollLeft / (itemWidth + gap));
             carousel.dataset.activeIndex = clamp(idx, 0, items.length - 1);
         });
-    }
+    });
 
     // Accordéon (FAQs)
     const accordions = document.querySelectorAll("[data-accordion]");

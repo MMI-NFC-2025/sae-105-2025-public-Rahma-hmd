@@ -6,5 +6,5 @@
     --pad: 18px;
     --radius: 14px;
 
-    --subtitle: "Montserrat", sans-serif;
+    --subtitle: "Alexandria", "Inter", system-ui, sans-serif;
 }

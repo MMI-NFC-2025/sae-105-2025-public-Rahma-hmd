@@ -4,6 +4,10 @@
     margin-bottom: 28px;
 }
 
+.section--tight {
+    gap: 10px;
+}
+
 .section__head {
     display: flex;
     align-items: center;
@@ -14,6 +18,11 @@
 .section__title {
     font-size: 22px;
     color: #fff;
+    font-weight: 700;
+}
+
+.section__title--center {
+    text-align: center;
 }
 
 .section__subtitle {
@@ -41,5 +50,40 @@
     .cards--scroll {
         grid-auto-columns: 320px;
     }
+}
+
+.partners {
+    display: grid;
+    gap: 12px;
+}
+
+.partners__col {
+    display: grid;
+    gap: 12px;
+}
+
+.partners__col img {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+@media (min-width: 768px) {
+    .partners {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.socials__item img {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
 }
 
