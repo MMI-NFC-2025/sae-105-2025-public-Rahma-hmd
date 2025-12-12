@@ -1,16 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page 404</title>
+    <title>404 - Page Non trouvée</title>
     <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-96x96.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="stylesheet" href="src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
+
 <body>
-    
+    <header class="topbar">
+        <a class="topbar__brand" href="index.html" aria-label="Retour à l'accueil">
+            <img class="topbar__logo" src="assets/icones/LOGO PETIT.svg" alt="Logo Échos Sonores">
+            Échos Sonores
+        </a>
+
+        <div class="topbar__actions">
+            <a class="icon-btn" href="#" aria-label="Accéder à la billetterie">
+                <img src="assets/icones/Cadis.svg" alt="">
+            </a>
+
+            <button class="icon-btn" id="menuOpen" aria-label="Ouvrir le menu" aria-controls="mobileMenu"
+                aria-expanded="false">
+                <img src="assets/icones/Icone menu.svg" alt="">
+            </button>
+        </div>
+    </header>
+
+    <main class="page">
+        <section class="page404">
+            <div class="page404__box">
+                <h1 class="page404__title">Page 404</h1>
+                <p class="page404__desc">La page que vous recherchez n'a pas été trouvée. Vous pouvez effectuer une
+                    recherche sur notre site ou retourner à l'accueil.</p>
+
+                <form action="https://google.com/" method="GET" x-data="{ q: '' }"
+                    x-on:submit="q = q + ' site:mmimontbeliard.com'" class="page404__form">
+                    <label for="q" class="sr-only">Texte à chercher</label>
+                    <input id="q" name="q" class="page404__input" type="text" x-model="q"
+                        placeholder="Rechercher sur le site">
+
+                    <div class="page404__actions">
+                        <button type="submit" class="btn btn--primary">Rechercher</button>
+                        <a class="btn btn--ghost" href="index.html">Retour à l'accueil</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer footer--stacked">
+        <div class="footer__brand">
+            <img class="footer__logo" src="assets/icones/LOGO PETIT.svg" alt="Logo Échos Sonores">
+        </div>
+        <div class="footer__block">
+            <h3 class="footer__title">Adresse</h3>
+            <p class="footer__text">Echos Sonore Festival<br>9 Allée de la Filature<br>25400 Audincourt</p>
+        </div>
+        <div class="footer__block">
+            <h3 class="footer__title">Contact</h3>
+            <p class="footer__text">07 54 32 16 79<br>echossonore@gmail.com</p>
+        </div>
+        <div class="footer__block footer__block--nav">
+            <a href="index.html">Accueil</a>
+            <a href="programme.html">Programme</a>
+            <a href="artistes.html">Artistes</a>
+            <a href="scene.html">Scènes</a>
+            <a href="infos.html">Infos pratiques</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <p class="footer__copyright">© 2026 — Echos Sonore Festival. Tous droits réservés.</p>
+    </footer>
+
 </body>
+
 </html>
