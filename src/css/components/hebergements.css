@@ -66,8 +66,8 @@
 }
 
 .access .accordion__item {
-    background: rgba(255,255,255,0.02);
-    border: 1px solid rgba(255,255,255,0.06);
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
     border-radius: 12px;
     overflow: hidden;
 }
@@ -84,5 +84,5 @@
 
 .access .accordion__panel {
     padding: 0 14px 14px;
-    color: rgba(255,255,255,0.9);
+    color: rgba(255, 255, 255, 0.9);
 }
