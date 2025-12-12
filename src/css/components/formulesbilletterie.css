@@ -1,0 +1,16 @@
+.card__description--text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    width: 300px;
+    padding-left: 10px;
+    padding-top: 27px; 
+}
+
+.section__tarif {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 160px;
+}

@@ -1,0 +1,104 @@
+.article__parasite{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.article__parasite--affiche{
+    width: 285px;
+    height: 382px;
+}
+
+.article__title{
+    position: relative;
+    right: 20%;
+}
+
+.article__soustitle{
+    position: relative;
+    right: 19%;
+    margin: 0; 
+}
+
+.article__legende{
+    margin: 0;
+    position: relative;
+    left: 6%;
+}
+
+.article__petitelegende{
+    margin: 0;
+    position: relative;
+    right: 19.5%;
+    margin-top: 12px ;
+}
+
+.article__corps2{
+    padding-bottom: 160px;
+    margin: 0;
+}
+
+.article__realisateur{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 160px;
+}
+
+.article__realisateur--Beauvois{
+    position: relative;
+    top: 100px;
+}
+.card__realisateur{
+    position: relative;
+    bottom: 57px;
+}
+
+.card__title--realisateur{
+    margin: 0;
+    font-family: var(--font-family-body);
+    color: var(--white);
+    border: 1px solid transparent;
+    font-size: 18px;
+    background: var(--black);
+    background: rgba(0, 0, 0, 0.8) ;
+    padding: 18px 64px;
+    text-align: center;
+}
+.article__img{
+    width: 270px;
+    height: 274px;
+    object-fit: cover;
+}
+
+.bong{
+    padding: 18px 70px;
+}
+
+.robert{
+    padding: 16px 81px;
+}
+
+.herry{
+    padding: 16px 75px ;
+}
+
+.article__corps3{
+    margin-top: var(--container-espace-texte);
+}
+.article__corps4{
+    margin-bottom: 200px;
+}
+
+.article__corps6{
+    margin-bottom: 200px;
+}
+
+
+

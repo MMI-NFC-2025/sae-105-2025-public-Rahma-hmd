@@ -1,0 +1,19 @@
+.listefilm__groupe{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.listefilm__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fiche__title{
+    font-size: var(--size-body);
+    font-family: var(--font-family-body);
+    font-weight: 400;
+    color: var(--black);
+   
+}

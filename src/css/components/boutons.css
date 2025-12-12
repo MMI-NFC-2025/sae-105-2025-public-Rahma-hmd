@@ -1,0 +1,73 @@
+.button{
+    font-family: var(--font-family-body);
+    text-transform: uppercase;
+    padding: 16px 26px ;
+    font-size: 15px;
+    box-shadow:  0px 2px 6px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.menu__icon--btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.menu__close--btn {
+    background-color: transparent;
+    border: none;
+    position: relative;
+    left: 330px;
+    top: 90px;
+    cursor: pointer;
+}  
+.menu__close--btn:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.intro__btn--festival{
+    background: var(--white);
+    color: var(--black);
+    margin-left: 10px;
+}
+
+.film-une__btn {
+    background-color: var(--blue);
+    margin-left: 43px;
+    position: relative;
+    top: 75px;
+}
+
+.engagement__btn {
+    background-color: var(--blue);
+    padding-right: 5px;
+    padding-left: 5px;
+
+}
+.card__btn {
+    background: var(--black);
+    border-radius: 50px;
+    position: relative;
+    left: 98px;
+    top: 12px;
+}
+
+.btn__bleu{
+    background: var(--brown);
+    color: var(--black);
+    width: 279px; ;
+    text-align: center;
+}
+
+.arrow__carrousel--right{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.arrow__carrousel--left{
+background-color: transparent;
+border: none;
+cursor: pointer;
+}

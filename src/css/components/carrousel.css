@@ -1,0 +1,49 @@
+.film-une__title{
+    padding-bottom: 50px;
+}
+
+.section__film-une{
+    padding: 0px;
+    padding-top: 160px;
+    padding-bottom: 100px;
+       
+}
+.carrousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+    max-width: 100%;
+    gap: 24px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.carrousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carrousel__img--film{
+    width: 285px;
+    height: 382px;
+}
+
+.arrow__carrousel--left{
+    position: relative ;
+    top: 40px;
+    left: 90px;
+}
+
+.arrow__carrousel--right{
+    position: relative ;
+    top: 40px;
+    left: 115px;
+}
+
+.carrousel__img{
+    width: 78px;
+}
+
+

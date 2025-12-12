@@ -1,0 +1,27 @@
+.icon__center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.article__video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listefilm__img{
+    width: 165px;
+    height: 220px;
+}
+
+video{
+width: 265px;
+height: 200px;
+}
+
+.localisation__carte{
+    width: 393px;
+    height: 393px;
+    object-fit: contain;
+    padding-top: 18px;
+}
