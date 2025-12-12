@@ -1,11 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Festival</title>
+    <title>Échos Sonores 2025 – Le festival</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
+
 <body>
-    
+    <header class="topbar">
+        <a class="topbar__brand" href="index.html" aria-label="Retour à l'accueil">
+            <img class="topbar__logo" src="assets/icones/LOGO PETIT.svg" alt="Logo Échos Sonores">
+            Échos Sonores
+        </a>
+
+        <div class="topbar__actions">
+            <a class="icon-btn" href="#" aria-label="Accéder à la billetterie">
+                <img src="assets/icones/Cadis.svg" alt="">
+            </a>
+
+            <button class="icon-btn" id="menuOpen" aria-label="Ouvrir le menu" aria-controls="mobileMenu"
+                aria-expanded="false">
+                <img src="assets/icones/Icone menu.svg" alt="">
+            </button>
+        </div>
+    </header>
+
+    <div class="overlay" id="menuOverlay" hidden></div>
+
+    <nav class="drawer" id="mobileMenu" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="drawer__head">
+            <span class="drawer__title">Menu</span>
+
+            <button class="icon-btn" id="menuClose" aria-label="Fermer le menu">
+                <img src="assets/icones/CROIXorange.svg" alt="">
+            </button>
+        </div>
+
+        <ul class="drawer__links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="festival.html">Le festival</a></li>
+            <li><a href="programme.html">Programme</a></li>
+            <li><a href="artistes.html">Artistes</a></li>
+            <li><a href="scene.html">Scènes</a></li>
+            <li><a href="infos.html">Infos pratiques</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="page">
+        <section class="hero">
+            <div class="hero__visual">
+                <img src="assets/img/herofestival.avif" alt="Public en concert">
+            </div>
+            <div class="hero__content">
+                <h1 class="hero__title">À propos du festival</h1>
+                <p class="hero__desc">Né à Audincourt, Échos Sonores célèbre la chaleur humaine, la diversité musicale
+                    et l’énergie de la scène locale et internationale.</p>
+            </div>
+        </section>
+
+        <section class="section section--tight">
+            <h2 class="section__title section__title--center">Notre histoire</h2>
+            <p class="section__subtitle">Créé pour célébrer les cultures reggae, dub et musiques conscientes, le
+                festival réunit chaque année artistes émergents et têtes d’affiche.</p>
+        </section>
+
+        <section class="section section--tight">
+            <h2 class="section__title section__title--center">Notre mission</h2>
+            <p class="section__subtitle">Offrir 4 jours d’immersion totale entre musique, lumière, arts visuels et
+                rencontres, en promouvant l’inclusion et l’expression artistique.</p>
+        </section>
+
+        <section class="section section--tight">
+            <h2 class="section__title section__title--center">Nos valeurs</h2>
+            <p class="section__subtitle">Inclusion, respect, partage et énergie collective. Chaque édition met à
+                l’honneur un thème, une couleur et une ambiance forte.</p>
+        </section>
+
+        <section class="section section--tight">
+            <h2 class="section__title section__title--center">Thème 2026 : “Fire & Roots”</h2>
+            <p class="section__subtitle">Une édition sous le signe du feu, de la lumière et des racines reggae, mêlant
+                chaleur visuelle, scénographies créatives et énergie collective.</p>
+        </section>
+
+        <section class="section section--tight">
+            <h2 class="section__title section__title--center">L’équipe du festival</h2>
+            <div class="carousel carousel--team" data-carousel>
+                <div class="carousel__track" data-carousel-track>
+                    <div class="team__item carousel__item">
+                        <img src="assets/img/equipeaicha.avif" alt="Aïcha Majouli">
+                        <p class="team__name">AICHA MAJOUDI</p>
+                    </div>
+                    <div class="team__item carousel__item">
+                        <img src="assets/img/equipemathieu.avif" alt="Mathieu Duronden">
+                        <p class="team__name">MATHIEU DURONDIN</p>
+                    </div>
+                    <div class="team__item carousel__item">
+                        <img src="assets/img/equipejules.avif" alt="Jules Ducain">
+                        <p class="team__name">JULES DUCAIN</p>
+                    </div>
+                    <div class="team__item carousel__item">
+                        <img src="assets/img/equipesarah.avif" alt="Sarah Bamporo">
+                        <p class="team__name">SARAH SAMPIRO</p>
+                    </div>
+                </div>
+                <div class="carousel__controls">
+                    <button class="carousel__btn" data-carousel-prev aria-label="Membre précédent">‹</button>
+                    <button class="carousel__btn" data-carousel-next aria-label="Membre suivant">›</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--tight" style="text-align:center;">
+            <a class="btn btn--primary" href="programme.html">Découvrir le programme</a>
+        </section>
+    </main>
+
+    <footer class="footer footer--stacked">
+        <div class="footer__brand">
+            <img class="footer__logo" src="assets/icones/LOGO PETIT.svg" alt="Logo Échos Sonores">
+        </div>
+        <div class="footer__block">
+            <h3 class="footer__title">Adresse</h3>
+            <p class="footer__text">Echos Sonore Festival<br>9 Allée de la Filature<br>25400 Audincourt</p>
+        </div>
+        <div class="footer__block">
+            <h3 class="footer__title">Contact</h3>
+            <p class="footer__text">07 54 32 16 79<br>echossonore@gmail.com</p>
+        </div>
+        <div class="footer__block footer__block--nav">
+            <a href="index.html">Accueil</a>
+            <a href="programme.html">Programme</a>
+            <a href="artistes.html">Artistes</a>
+            <a href="scene.html">Scènes</a>
+            <a href="infos.html">Infos pratiques</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <p class="footer__copyright">© 2026 — Echos Sonore Festival. Tous droits réservés.</p>
+    </footer>
+
+    <script src="src/js/script.js" defer></script>
 </body>
+
 </html>

@@ -45,3 +45,32 @@
     transform: rotate(45deg);
 }
 
+.team {
+    display: grid;
+    gap: 18px;
+}
+
+.team__item {
+    display: grid;
+    justify-items: center;
+    gap: 8px;
+    text-align: center;
+}
+
+.team__item img {
+    width: 116px;
+    height: 156px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.28);
+}
+
+.team__name {
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+

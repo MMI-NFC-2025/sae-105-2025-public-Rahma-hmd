@@ -1,0 +1,38 @@
+.team__item {
+    display: grid;
+    gap: 12px;
+    text-align: center;
+}
+
+.team__item img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.team__name {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.carousel--team .carousel__track {
+    grid-auto-columns: 70%;
+}
+
+@media (min-width: 768px) {
+    .carousel--team .carousel__track {
+        grid-auto-columns: 45%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .carousel--team .carousel__track {
+        grid-auto-columns: 280px;
+    }
+}
+

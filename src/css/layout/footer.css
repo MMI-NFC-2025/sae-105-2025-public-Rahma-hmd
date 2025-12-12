@@ -4,12 +4,24 @@
     background: #150606;
     border-top: 1px solid rgba(237, 110, 5, 0.18);
     display: grid;
-    gap: 18px;
+    gap: 24px;
+}
+
+.footer__brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.footer__logo {
+    width: 44px;
+    height: 44px;
 }
 
 .footer__block {
     display: grid;
-    gap: 6px;
+    gap: 10px;
     color: rgba(255, 255, 255, 0.9);
 }
 
@@ -27,7 +39,7 @@
 
 .footer__block--nav {
     display: grid;
-    gap: 6px;
+    gap: 10px;
     font-size: 14px;
 }
 
