@@ -98,9 +98,21 @@ document.addEventListener("DOMContentLoaded", () => {
             const panel = item.querySelector(".accordion__panel");
             if (!btn || !panel) return;
 
+            // Ensure panel is hidden initially for assistive technologies
+            const isOpenInit = item.classList.contains('is-open');
+            panel.setAttribute('aria-hidden', String(!isOpenInit));
+
+            // Ensure panel has an id and set aria-controls on the toggle for accessibility
+            if (!panel.id) {
+                panel.id = 'accordion-panel-' + Math.random().toString(36).slice(2, 9);
+            }
+            btn.setAttribute('aria-controls', panel.id);
+
             btn.addEventListener("click", (e) => {
                 const isOpen = item.classList.toggle("is-open");
                 btn.setAttribute("aria-expanded", String(isOpen));
+                // set proper aria-hidden for the panel so screen readers hide it when closed
+                panel.setAttribute('aria-hidden', String(!isOpen));
                 // rotate the icon when open
                 btn.classList.toggle('is-open', isOpen);
                 e.stopPropagation();
