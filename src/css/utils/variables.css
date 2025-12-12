@@ -1,0 +1,10 @@
+:root {
+    --bg: #1F0D0E;
+    --text: #ffffff;
+    --accent: #ED6E05;
+
+    --pad: 18px;
+    --radius: 14px;
+
+    --subtitle: "Montserrat", sans-serif;
+}

@@ -9,3 +9,58 @@
     
 </body>
 </html>
+<header class="topbar">
+    <a class="topbar__brand" href="index.html" aria-label="Retour à l'accueil">
+        <img class="topbar__logo" src="assets/icons/logo-petit.svg" alt="Echos Sonore">
+    </a>
+
+    <div class="topbar__actions">
+        <a class="icon-btn" href="#" aria-label="Panier">
+            <img src="assets/icons/panier.svg" alt="">
+        </a>
+
+        <button class="icon-btn" id="menuOpen" aria-label="Ouvrir le menu" aria-controls="mobileMenu"
+            aria-expanded="false">
+            <img src="assets/icons/icone-menu.svg" alt="">
+        </button>
+    </div>
+<header class="topbar">
+    <a class="topbar__brand" href="index.html" aria-label="Retour à l'accueil">
+        <img class="topbar__logo" src="assets/icons/logo-petit.svg" alt="Echos Sonore">
+    </a>
+
+    <div class="topbar__actions">
+        <a class="icon-btn" href="#" aria-label="Panier">
+            <img src="assets/icons/panier.svg" alt="">
+        </a>
+
+        <button class="icon-btn" id="menuOpen" aria-label="Ouvrir le menu" aria-controls="mobileMenu"
+            aria-expanded="false">
+            <img src="assets/icons/icone-menu.svg" alt="">
+        </button>
+    </div>
+</header>
+
+<div class="overlay" id="menuOverlay" hidden></div>
+
+<nav class="drawer" id="mobileMenu" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="drawer__head">
+        <span class="drawer__title">MENU</span>
+
+        <button class="icon-btn" id="menuClose" aria-label="Fermer le menu">
+            <img src="assets/icons/croix-orange.svg" alt="">
+        </button>
+    </div>
+
+    <ul class="drawer__links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="festival.html">Le festival</a></li>
+        <li><a href="programme.html">Programme</a></li>
+        <li><a href="artistes.html">Artistes</a></li>
+        <li><a href="scenes.html">Scènes</a></li>
+        <li><a href="infos.html">Infos pratiques</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<script src="src/js/script.js" defer></script> 

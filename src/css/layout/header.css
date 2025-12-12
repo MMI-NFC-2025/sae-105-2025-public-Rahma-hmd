@@ -1,0 +1,55 @@
+.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--pad);
+    background: var(--bg);
+    border-bottom: 1px solid rgba(237, 110, 5, .18);
+}
+
+.topbar__brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.topbar__logo {
+    width: 44px;
+    height: 44px;
+}
+
+.topbar__actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Boutons icônes */
+.icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 0;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, .04);
+    cursor: pointer;
+}
+
+.icon-btn img {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.icon-btn:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+} 
