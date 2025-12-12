@@ -23,7 +23,8 @@
     display: inline-flex;
     gap: 8px;
     align-items: center;
-    cursor: default; /* non-interactive */
+    cursor: default;
+    /* non-interactive */
 }
 
 .filters__caret {
@@ -40,5 +41,7 @@
 }
 
 @media (min-width: 720px) {
-    .filters__row { gap: 48px; }
+    .filters__row {
+        gap: 48px;
+    }
 }
