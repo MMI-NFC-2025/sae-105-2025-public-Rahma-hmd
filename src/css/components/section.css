@@ -55,6 +55,8 @@
 .partners {
     display: grid;
     gap: 12px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
 }
 
 .partners__col {
@@ -63,16 +65,13 @@
 }
 
 .partners__col img {
-    width: 100%;
+    width: 102px;
+    height: 102px;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.08);
     background: rgba(255, 255, 255, 0.04);
-}
-
-@media (min-width: 768px) {
-    .partners {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    object-fit: cover;
+    justify-self: center;
 }
 
 .socials {
