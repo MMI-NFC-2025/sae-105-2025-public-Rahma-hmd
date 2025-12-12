@@ -119,4 +119,28 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
     });
+
+    // Contact form handling (client-side only)
+    const contactForm = document.getElementById('contactForm');
+    const contactState = document.getElementById('contactFormState');
+    if (contactForm && contactState) {
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = contactForm.querySelector('#name');
+            const email = contactForm.querySelector('#email');
+            const message = contactForm.querySelector('#message');
+
+            // Simple validation
+            if (!name.value.trim() || !email.value.trim() || !message.value.trim()) {
+                contactState.style.display = 'block';
+                contactState.textContent = 'Veuillez remplir les champs obligatoires.';
+                return;
+            }
+
+            // Success (stub) — in a real site we'd POST to an endpoint
+            contactState.style.display = 'block';
+            contactState.textContent = 'Message envoyé — merci, nous vous répondrons bientôt.';
+            contactForm.reset();
+        });
+    }
 });

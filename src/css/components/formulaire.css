@@ -1,0 +1,57 @@
+/* Basic form styles */
+.contact-form {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 16px;
+    border-radius: 12px;
+    display: grid;
+    gap: 12px;
+}
+
+.contact-form label {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    color: var(--text);
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.contact-form .form-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact-form .btn--primary {
+    background: linear-gradient(180deg, var(--accent), #c75503);
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 16px;
+    border: 0;
+    cursor: pointer;
+}
+
+.contact-form .form-note {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 13px;
+}
+
+@media (min-width: 720px) {
+    .contact-form {
+        padding: 20px;
+    }
+}
