@@ -93,15 +93,18 @@ document.addEventListener("DOMContentLoaded", () => {
     accordions.forEach((accordion) => {
         const items = accordion.querySelectorAll(".accordion__item");
         items.forEach((item) => {
-            const btn = item.querySelector(".accordion__button");
+            // prefer the new toggle button, fall back to old full-button
+            const btn = item.querySelector(".accordion__toggle") || item.querySelector(".accordion__button");
             const panel = item.querySelector(".accordion__panel");
             if (!btn || !panel) return;
 
-            btn.addEventListener("click", () => {
+            btn.addEventListener("click", (e) => {
                 const isOpen = item.classList.toggle("is-open");
                 btn.setAttribute("aria-expanded", String(isOpen));
+                // rotate the icon when open
+                btn.classList.toggle('is-open', isOpen);
+                e.stopPropagation();
             });
         });
     });
 });
- 

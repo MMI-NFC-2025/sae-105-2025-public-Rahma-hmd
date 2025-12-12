@@ -72,14 +72,40 @@
     overflow: hidden;
 }
 
-.access .accordion__button {
-    width: 100%;
-    padding: 14px;
-    background: none;
-    border: 0;
+.access .accordion__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 14px;
+}
+
+.access .accordion__label {
     color: #fff;
-    text-align: left;
-    font-weight: 700;
+    font-weight: 800;
+}
+
+.access .accordion__toggle {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.03);
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.access .accordion__toggle img {
+    width: 18px;
+    height: 18px;
+    display: block;
+    transform: rotate(0deg);
+    transition: transform 0.2s ease;
+}
+
+.access .accordion__toggle.is-open img {
+    transform: rotate(180deg);
 }
 
 .access .accordion__panel {
