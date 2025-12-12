@@ -1,6 +1,6 @@
 body {
     min-height: 100vh;
-    background: #210c0c;
+    background: var(--bg-02);
 }
 
 .page {

@@ -11,15 +11,15 @@
 }
 
 .btn--primary {
-    background: #f46c09;
-    color: #fff;
-    box-shadow: 0 8px 14px rgba(244, 108, 9, 0.35);
+    background: var(--accent-alt);
+    color: var(--text);
+    box-shadow: 0 8px 14px var(--accent-shadow);
 }
 
 .btn--ghost {
     background: transparent;
-    border-color: rgba(255, 255, 255, 0.28);
-    color: #fff;
+    border-color: var(--muted-28);
+    color: var(--text);
 }
 
 .btn:hover {

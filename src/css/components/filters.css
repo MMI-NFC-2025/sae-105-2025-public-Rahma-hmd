@@ -2,8 +2,8 @@
     max-width: 900px;
     margin-inline: auto;
     padding: 12px 14px;
-    border-top: 1px solid rgba(255,255,255,0.06);
-    border-bottom: 1px solid rgba(255,255,255,0.06);
+    border-top: 1px solid var(--muted-06);
+    border-bottom: 1px solid var(--muted-06);
 }
 
 .filters__row {
@@ -15,7 +15,7 @@
 }
 
 .filters__item {
-    color: rgba(255,255,255,0.95);
+    color: var(--text-95);
     font-weight: 800;
     letter-spacing: 0.6px;
     font-size: 14px;
@@ -31,7 +31,7 @@
     width: 18px;
     height: 18px;
     border-radius: 6px;
-    background: rgba(255,255,255,0.03);
+    background: var(--muted-03);
     color: var(--accent);
     font-weight: 900;
     display: inline-flex;

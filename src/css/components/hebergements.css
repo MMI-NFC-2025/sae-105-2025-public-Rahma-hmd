@@ -1,4 +1,4 @@
-.hebergements {
+﻿.hebergements {
     display: grid;
     gap: 18px;
     margin-top: 12px;
@@ -110,5 +110,5 @@
 
 .access .accordion__panel {
     padding: 0 14px 14px;
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--text-85);
 }
