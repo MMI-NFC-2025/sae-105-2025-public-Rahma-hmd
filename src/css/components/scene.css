@@ -1,0 +1,38 @@
+.scenes {
+    display: grid;
+    gap: 18px;
+}
+
+.scenes .card__media {
+    height: 220px;
+}
+
+.scenes .card__label {
+    left: 14px;
+    bottom: 14px;
+    padding: 8px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+@media (min-width: 720px) {
+    .scenes {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 540px;
+        margin-inline: auto;
+    }
+
+    .scenes .card__media {
+        height: 280px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .scenes {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .scenes .card__media {
+        height: 260px;
+    }
+}
