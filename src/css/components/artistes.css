@@ -31,6 +31,7 @@
     width: 100%;
     height: 120px;
     overflow: hidden;
+    aspect-ratio: 337 / 318;
 }
 
 .artist-card__media img {
@@ -62,7 +63,7 @@
 
 .artist-card__meta {
     font-size: 13px;
-    color: rgba(255,255,255,0.75);
+    color: rgba(255, 255, 255, 0.75);
 }
 
 .artist-card--link {
@@ -72,11 +73,17 @@
 
 @media (min-width: 768px) {
     .artist-card {
-        grid-template-columns: 110px 1fr;
+        grid-template-columns: 110px 337px;
     }
 
     .artist-card__media {
-        height: 160px;
+        height: 318px;
+        width: 337px;
+    }
+
+    .artist-card__media img {
+        width: 337px;
+        height: 318px;
     }
 }
 

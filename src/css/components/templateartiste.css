@@ -1,0 +1,58 @@
+.artist-detail {
+    display: grid;
+    gap: 16px;
+}
+
+.artist-detail .section__title {
+    font-size: 13px;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.9);
+    letter-spacing: 0.06em;
+}
+
+.artist-detail .section__subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.gallery {
+    display: grid;
+    gap: 12px;
+}
+
+.gallery__item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.24);
+    object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    .artist-detail {
+        max-width: 720px;
+        margin-inline: auto;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 337px;
+        grid-auto-rows: minmax(120px, auto);
+        gap: 16px;
+    }
+
+    .gallery__item:first-child {
+        grid-column: 1 / 2;
+    }
+
+    .gallery__item:nth-child(2),
+    .gallery__item:nth-child(3) {
+        grid-column: 2 / 3;
+    }
+
+    .gallery__item img {
+        width: 337px;
+        height: 318px;
+    }
+}
