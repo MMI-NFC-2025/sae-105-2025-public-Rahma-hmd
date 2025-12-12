@@ -18,6 +18,7 @@
     text-decoration: none;
     color: var(--text);
     font-weight: 700;
+    text-transform: var(--brand-text-transform, none);
 }
 
 .topbar__logo {

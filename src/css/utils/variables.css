@@ -60,4 +60,6 @@
     --size-body2: 14px;
     --bg-02: #210c0c;
     --accent-alt: #F46C09;
+    /* Header brand text transform variable */
+    --brand-text-transform: uppercase;
 }
