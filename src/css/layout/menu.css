@@ -28,6 +28,19 @@
     padding: 18px;
 }
 
+.drawer__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.drawer__title {
+    font-family: var(--subtitle);
+    font-size: 18px;
+    color: #fff;
+}
+
 .drawer.is-open {
     transform: translateX(0);
     animation: drawerPop .35s cubic-bezier(.2, .9, .2, 1);

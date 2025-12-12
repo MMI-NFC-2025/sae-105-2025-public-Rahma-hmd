@@ -1,0 +1,20 @@
+/* Utils */
+@import url("utils/variables.css");
+
+/* Base */
+@import url("base/reset.css");
+@import url("base/typography.css");
+@import url("base/main.css");
+
+/* Layout */
+@import url("layout/header.css");
+@import url("layout/menu.css");
+@import url("layout/hero.css");
+@import url("layout/footer.css");
+
+/* Components */
+@import url("components/boutons.css");
+@import url("components/section.css");
+@import url("components/article.css");
+@import url("components/carrousel.css");
+@import url("components/liste.css");

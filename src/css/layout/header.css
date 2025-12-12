@@ -16,6 +16,8 @@
     align-items: center;
     gap: 10px;
     text-decoration: none;
+    color: #fff;
+    font-weight: 700;
 }
 
 .topbar__logo {

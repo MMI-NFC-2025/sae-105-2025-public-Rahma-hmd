@@ -1,0 +1,62 @@
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel__track {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 90%;
+    gap: 12px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 8px;
+    scrollbar-width: none;
+}
+
+.carousel__track::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel__item {
+    scroll-snap-align: start;
+}
+
+.carousel__controls {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.carousel__btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: rgba(255, 255, 255, 0.06);
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.carousel__btn:hover {
+    transform: translateY(-1px);
+}
+
+@media (min-width: 768px) {
+    .carousel__track {
+        grid-auto-columns: 60%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .carousel__track {
+        grid-auto-columns: 320px;
+    }
+}
+

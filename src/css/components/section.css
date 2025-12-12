@@ -1,0 +1,45 @@
+.section {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 28px;
+}
+
+.section__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.section__title {
+    font-size: 22px;
+    color: #fff;
+}
+
+.section__subtitle {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.cards {
+    display: grid;
+    gap: 12px;
+}
+
+.cards--scroll {
+    grid-auto-flow: column;
+    grid-auto-columns: 74%;
+    overflow-x: auto;
+    padding-bottom: 6px;
+}
+
+@media (min-width: 768px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cards--scroll {
+        grid-auto-columns: 320px;
+    }
+}
+
