@@ -9,11 +9,6 @@
     overflow: hidden;
 }
 
-.hero__visual--framed {
-    border: 3px solid #028dff;
-    box-shadow: 0 0 0 4px rgba(2, 141, 255, 0.22);
-}
-
 .hero__content {
     display: grid;
     gap: 10px;
